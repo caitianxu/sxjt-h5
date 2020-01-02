@@ -1,0 +1,56 @@
+.un-data{
+  width: 50vw;
+  height: 80vw;
+  background: url('../../style/img/not.png') no-repeat center 25vw / 80% auto;
+  padding-top: 62vw;
+  margin:  0 auto 0 auto;
+  text-align: center;
+  color: #999;
+  font-size: 0.8rem;
+  .ac{
+    padding-top: 20px;
+    .am-button-ghost{
+      color: #f80;
+      border-color: #f80;
+      &::before{
+        border-color: #f80;
+      }
+    }
+  }
+}
+
+.page-content-new{
+  height: calc(100vh - 95px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.videoscs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  .book {
+    width: 100%;
+    margin-bottom: 10px;
+    .cover {
+      width: 100%;
+      padding: 1px;
+      background: #f4f4f4;
+      img {
+        width: 100%;
+      }
+    }
+    .name {
+      text-align: center;
+      color: #999;
+      font-size: 0.8rem;
+      padding-top: 5px;
+      line-height: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.Tab-Bar {
+  height: 50px;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  border-top: 1px #e4e4e4 solid;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: #f4f4f4;
+  display: flex;
+  z-index: 10;
+  .menu {
+    // width: 25%;
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding-top: 7px;
+    &.active {
+      color: #ff8c00;
+    }
+    .icon {
+      display: block;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      font-size: 22px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

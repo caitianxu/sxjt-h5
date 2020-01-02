@@ -1,0 +1,77 @@
+.video-page-content {
+  display: flex;
+  width: 100%;
+  .left-menu {
+    width: 23vw;
+    background: #f4f4f4;
+    .menu-parent {
+      width: 100%;
+      height: calc(100vh - 95px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+    .menu {
+      font-size: 0.8rem;
+      display: block;
+      color: #666;
+      padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+      &.active{
+        background: #fff;
+        color: #ff8c00;
+        &::after {
+          content: " ";
+          width: 3px;
+          height: 50%;
+          position: absolute;
+          background: #ff8c00;
+          left: 0;
+          top: 25%;
+        }
+      }
+    }
+  }
+  .book-list {
+    flex: 1;
+    height: calc(100vh - 95px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .book {
+      padding-left: 15px;
+      width: 77vw;
+      &:active{
+        background: #f9f9f9;
+      }
+      .book-row {
+        display: block;
+        padding: 10px 10px 10px 0;
+        border-bottom: 1px #eee solid;
+        .cover{
+          width: 100%;
+          overflow: hidden;
+          min-height: 30vw;
+          background: #f9f9f9;
+          box-shadow: 0 0 5px #ddd;
+          img{
+            float: left;
+            width: 100%;
+            height: auto;
+          }
+        }
+        .detail{
+          flex: 1;
+          overflow: hidden;
+          .name{
+            line-height: 1.5;
+            font-size: 1rem;
+            text-align: left;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

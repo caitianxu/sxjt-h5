@@ -1,0 +1,42 @@
+.nick-fix{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  .line-nav{
+    height: 45px;
+    border-bottom: 1px solid #eee;
+    h3{
+      text-align: center;
+      line-height: 45px;
+    }
+    .reback{
+      position: absolute;
+      color: #ff8c00;
+      padding: 4px;
+      height: 45px;
+    }
+  }
+  .cform{
+    padding: 20px 30px;
+    textarea{
+      width: 100%;
+      border: 1px #eee solid;
+      padding: 15px 10px;
+      min-height: 160px;
+    }
+  }
+  .caction{
+    padding: 20px 30px;
+    a{
+      color: #ff8c00;
+      border-color: #ff8c00;
+      &::before{
+        border-color: #ff8c00;
+      }
+    }
+  }
+}

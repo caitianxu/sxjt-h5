@@ -1,0 +1,39 @@
+.sendReview{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  .line-nav{
+    height: 45px;
+    border-bottom: 1px solid #eee;
+    h3{
+      text-align: center;
+      line-height: 45px;
+    }
+    .reback{
+      position: absolute;
+      color: #ff8c00;
+      padding: 4px;
+      height: 45px;
+    }
+  }
+  .review-content{
+    padding: 15px;
+    text-align: center;
+    textarea{
+      height: 200px;
+      width: 100%;
+      border: 1px #eee solid;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+    .am-button-primary{
+      background-color: #ff8c00;
+      border: none;
+      width: 50vw;
+    }
+  }
+}

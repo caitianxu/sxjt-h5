@@ -1,0 +1,146 @@
+.am-popover-item-container {
+  .am-popover-item-icon {
+    .icon {
+      line-height: 18px;
+      font-size: 18px;
+    }
+  }
+  .am-popover-item-content {
+    font-size: 13px;
+    padding-top: 2px;
+    line-height: 18px;
+  }
+}
+.page-content {
+  padding: 0 15px;
+
+  .menu-bar{
+    display: flex;
+    border-bottom: 1px #f4f4f4 solid;
+    margin-bottom: 5px;
+    .menu-item{
+      width: 20%;
+      text-align: center;
+      color: #666;
+      padding: 10px 0;
+      .cover{
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 0 auto;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        p{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .all-fix {
+    display: block;
+    .content-title {
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      width: 100%;
+      .name {
+        font-size: 0.8rem;
+        color: #000;
+      }
+      .more {
+        float: right;
+        color: #999;
+        font-size: 0.8rem;
+        line-height: 30px;
+      }
+    }
+    .content-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .book {
+        width: 32%;
+        margin-bottom: 10px;
+        .cover {
+          width: 100%;
+          height: 38vw;
+          padding: 1px;
+          background: #f4f4f4;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .name {
+          text-align: center;
+          color: #999;
+          font-size: 0.8rem;
+          padding-top: 5px;
+          line-height: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .video {
+        width: 49%;
+        margin-bottom: 10px;
+        .cover {
+          width: 100%;
+          height: 35vw;
+          padding: 1px;
+          background: #f4f4f4;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .name {
+          text-align: center;
+          color: #999;
+          font-size: 0.8rem;
+          padding-top: 5px;
+          line-height: 20px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 641px) {
+  .page-content .content-list .book .cover {
+    height: 250px !important;
+  }
+  .page-content .content-list .video .cover {
+    height: 225px !important;
+  }
+}
+.logo{
+  width: 270px;
+  height: 36px;
+  background: url('../../style/img/logo.png') no-repeat left center / auto 30px;
+  float: left;
+}
+
+.top-banner{
+  padding-top: 15px;
+
+  .banner{
+
+    span{
+      color: #666666;
+      font-size: small;
+    }
+    width: 100vw;
+    img{
+      width: 100%;
+    }
+  }
+}

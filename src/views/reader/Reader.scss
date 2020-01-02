@@ -1,0 +1,174 @@
+.book-menu {
+  background: #fff;
+  padding: 20px 40px 20px 20px;
+  width: 65vw;
+  min-height: 100vh;
+  h3 {
+    font-size: 1rem;
+    line-height: 42px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #000;
+  }
+  h4 {
+    font-size: 0.8rem;
+    line-height: 42px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+  }
+  li {
+    &.active > h3,
+    &.active > h4 {
+      color: #f90;
+    }
+  }
+}
+.reader-control {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  .reader-nav {
+    height: 45px;
+    position: relative;
+  }
+  .reader-center {
+    flex: 1;
+  }
+  .reader-tab {
+    height: 120px;
+    position: relative;
+  }
+  .solo-plan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .top-nav {
+      height: 45px;
+      .reback {
+        width: 45px;
+        height: 45px;
+        padding: 5px 0 0 0;
+        display: inline-block;
+        text-align: left;
+      }
+      .shuqian {
+        float: right;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        .icon-shuqianw {
+          font-size: 20px;
+        }
+        .icon-shuqian {
+          font-size: 20px;
+          color: #f80;
+        }
+      }
+    }
+    .solo-row-1 {
+      display: flex;
+      padding: 0 15px;
+      height: 45px;
+      .book-last {
+        width: 60px;
+        text-align: right;
+        line-height: 45px;
+      }
+      .reag {
+        flex: 1;
+        height: 45px;
+        padding: 20px 20px 0;
+      }
+      .book-next {
+        width: 60px;
+        text-align: left;
+        line-height: 45px;
+      }
+    }
+    .solo-row-2 {
+      display: flex;
+      padding: 0 15px;
+      .a-item {
+        width: 25%;
+        text-align: center;
+        .icon {
+          font-size: 26px;
+        }
+        p {
+          font-size: 0.8rem;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+.reader-html {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f3f2d9;
+  .book-reader-content {
+    width: 100vw;
+    padding: 15px;
+    .html-body {
+      display: inline-block;
+      width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px #999 dashed;
+      color: #676767;
+      p {
+        margin-bottom: 1rem;
+        text-indent: 2rem;
+        text-align: justify;
+      }
+      p > img {
+        margin-left: -2rem;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.book-reader {
+  &.in-night {
+    .book-menu {
+      background: #131415;
+      h3,
+      h4 {
+        color: #999;
+      }
+      li.active > h3,
+      li.active > h4 {
+        color: #f90;
+      }
+    }
+    .reader-html {
+      background: #131415;
+      .html-body {
+        color: #c0c0c0;
+      }
+      .a-item {
+        p {
+          color: #eee !important;
+        }
+      }
+      .reader-control {
+        .solo-plan {
+          background: #333;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.msg-title {
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+}
+.msg-time {
+  text-align: center;
+  color: #999;
+  font-size: 0.8rem;
+}
+.cms-html {
+  padding: 10px 15px;
+  font-size: 1rem;
+  text-align: justify;
+  img {
+    max-width: 100%;
+  }
+}
+.msg-info {
+  .not-data {
+    text-align: center;
+    line-height: 100px;
+    color: #999;
+    font-size: 0.8rem;
+  }
+  .comms {
+    padding: 10px 15px;
+    border-bottom: 10px #f4f4f4 solid;
+    border-top: 10px #f4f4f4 solid;
+    .com-title {
+      height: 40px;
+      label {
+        font-size: 1rem;
+        line-height: 40px;
+      }
+      span {
+        float: right;
+        line-height: 40px;
+        font-size: 0.9rem;
+        color: #999;
+      }
+    }
+    .review {
+      display: flex;
+      margin-bottom: 10px;
+      .cover {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+      }
+      .ddl {
+        flex: 1;
+        padding-left: 10px;
+        border-bottom: 1px #eee dashed;
+        .row-1 {
+          margin-top: 5px;
+          height: 30px;
+          line-height: 30px;
+          .name {
+            color: #000;
+          }
+          .time {
+            float: right;
+            font-size: 0.8rem;
+            color: #999;
+          }
+        }
+        .row-2 {
+          padding: 5px 0 10px 0;
+          font-size: 0.8rem;
+          color: #666;
+        }
+      }
+    }
+  }
+  .copy {
+    text-align: center;
+    line-height: 100px;
+    font-size: 0.8rem;
+    color: #999;
+  }
+  .more-data{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.8rem;
+    color: #ff8c00;
+  }
+}
